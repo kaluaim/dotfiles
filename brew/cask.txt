@@ -1,0 +1,9 @@
+caffeine
+docker
+font-hack-nerd-font
+iterm2
+java
+julia
+reactotron
+transmission
+vlc
