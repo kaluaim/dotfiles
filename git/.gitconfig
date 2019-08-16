@@ -1,0 +1,10 @@
+[user]
+	name = kaluaim
+	email = kaluaim@gmail.com
+	signingKey = 835CC1D66C157CCC
+[credential]
+	helper = osxkeychain
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg
