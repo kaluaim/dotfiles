@@ -4,7 +4,32 @@
 	signingKey = 835CC1D66C157CCC
 [credential]
 	helper = osxkeychain
-[commit]
-	gpgSign = true
 [gpg]
-	program = gpg
+    program = gpg
+[ui "color"]
+	ui = always
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	safecrlf = true
+[alias]
+	c = commit
+	s = status
+	st = status
+	lg = log --oneline
+	last = log -1 HEAD
+	f = push --force-with-lease
+	# https://stackoverflow.com/a/11688523/472927
+	ss = "!f() { git stash show stash^{/$*} -p; }; f"
+	sa = "!f() { git stash apply stash^{/$*}; }; f"
+	sl = stash list
+[help]
+	autocorrect = 1
+[github]
+	user = kaluaim
+[commit]
+	gpgsign = true
+[protocol]
+	version = 2
